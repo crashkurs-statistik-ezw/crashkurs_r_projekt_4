@@ -1,18 +1,18 @@
-# 4.0 Setup -------------------------------------------------------------
-# 4.0.1
+# 4.1 Setup -------------------------------------------------------------
+# 4.1.1
 # (Installiere und) lade die Pakete janitor und haven
 
 
-# 4.1 Daten einlesen -----------------------------------------------------
+# 4.2 Daten einlesen -----------------------------------------------------
 
-# 4.1.0
+# 4.2.1
 # * Lese die CSV-Dateien edXSample.csv und StanfordSample.csv in R ein
 # * Speichere die beiden Dateien unter folgenden Variablen: edx und stanford
 
 
-# 4.2 Daten bereinigen ---------------------------------------------
+# 4.3 Daten bereinigen ---------------------------------------------
 
-# 4.2.1 Variable 'lernplattform' hinzufugen
+# 4.3.1 Variable 'lernplattform' hinzufugen
 # * Füge den beiden Data Frames mit mutate eine Spalte mit dem Namen 
 #   lernplattform hinzu. Fülle für den Data Frame edx die Variable 
 #   mit dem String "edx". Fülle für den Data Frame stanford die 
@@ -21,17 +21,17 @@
 #   'stanford_cleaned'
 
 
-# 4.2.2 Data Frames zusammen fügen
+# 4.3.2 Data Frames zusammenfügen
 # * Nutze die Funktion 'bind_rows' um die Data Frames 'edx_cleaned' und
 #   'stanford_cleaned' zusammenzufügen
 # * Nutze den Pipe-Operator und wende die Funktion 'clean_names' an,
 #   um die Variablennamen zu reinigen
 # * Speichere den Data Frame in der Variable 'kurse'
-# * Füge mit 'rownames_to-column' die Reihennummer zum Datensatz hinzu. 
+# * Füge mit 'rownames_to_column' die Reihennummer zum Datensatz hinzu. 
 #   Nenne die neue Spalte "id"
 
 
-# 4.2.3 Spalten umkodieren
+# 4.3.3 Spalten umkodieren
 # * Kodiere die Spalte 'course_staff_gender' mit Hilfe von 'case_when'
 #   folgendermaßen um.
 #   -1 -> männlich / männlich dominiert
@@ -50,10 +50,9 @@
 # * Speichere den Output im Datensatz kurse_cleaned
 
 
-# 4.3 Datenexport ---------------------------------------------------------
-# 4.3.1 Datensatz exportieren
-# * Exportiere den Data Frame 'kurse_cleaned' als CSV-Datei im Ordner export
+# 4.4 Datenexport ---------------------------------------------------------
+# 4.4.1 Datensatz exportieren
+# * Exportiere den Data Frame 'kurse_cleaned' als CSV-Datei im Ordner cleaned
 #   unter dem Dateinamen 'kurse_cleaned.csv'
-# * Exportiere den Data Frame 'kurse_cleaned' als SAV-Datei im Ordner export
+# * Exportiere den Data Frame 'kurse_cleaned' als SAV-Datei im Ordner cleaned
 #   unter dem Dateinamen 'kurse_cleaned.sav'
-
